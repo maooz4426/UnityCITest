@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
-        uses: actions/checkout@v4.3.0
+        uses: actions/checkout@v4.2
       - name: build
         uses: game-ci/unity-builder@v4
         env:
