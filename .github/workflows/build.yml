@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
-        uses:  actions/checkout@v4
+        uses: actions/checkout@v4
       - name: build
         uses: game-ci/unity-builder@v4.3
         env:
@@ -15,7 +15,7 @@ jobs:
           targetPlatform: StandaloneOSX
           unityVersion: 6000.0.36f1
           
-      - name: Upload the WebGL Build
+      - name: Upload Build
         uses: actions/upload-artifact@v4
         with:
           name: Build
